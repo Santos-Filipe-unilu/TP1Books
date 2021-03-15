@@ -4,9 +4,9 @@
 
 # To complete: 
 
-* Name :
-* Student Id:
-* Email :
+* Name : DOS SANTOS FIGUEIREDO Filipe
+* Student Id: 0190865745
+* Email : filipe.dossantos.002@student.uni.lu
 
 ### Setting
 In this practical session, you will code a method to compute the cost of shopping basket and test it using JUnit.
