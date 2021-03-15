@@ -19,6 +19,36 @@ public class BookShop {
      */
     public double cost(int[] books){
         //TODO complete
-        return 0.0;
+    	int totalBooks = 0;
+    	int differentBooksCount=0;
+    	double price = 0;
+    	
+    	for( int i : books) {
+    		if(i > 0) {
+    			totalBooks += i;
+    			differentBooksCount+=1;
+    		}
+    	}
+    	if(differentBooksCount==1) {
+    		price = totalBooks*8;
+    	}
+    	if(differentBooksCount==2) {
+    		totalBooks -= differentBooksCount;
+    		price = differentBooksCount*8*0.93+ totalBooks*8;
+    	}
+    	if(differentBooksCount==3) {
+    		totalBooks -= differentBooksCount;
+    		price = differentBooksCount*8*0.86+ totalBooks*8;
+    	}
+    	if(differentBooksCount==4) {
+    		totalBooks -= differentBooksCount;
+    		price = differentBooksCount*8*0.72+ totalBooks*8;
+    	}
+    	if(differentBooksCount==5) {
+    		totalBooks -= differentBooksCount;
+    		price = differentBooksCount*8*0.65+ totalBooks*8;
+    	}
+
+        return price;
     }
 }
